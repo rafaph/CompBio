@@ -9,7 +9,7 @@ class MainGlobalAlignment:
     def __init__(self):
         self.__s = Sequence('GTGCGATCGT')
         self.__t = Sequence('AGACGTG')
-        self.__sim = RecursiveSimilarity(self.__s, self.__t)
+        self.__sim = DynamicProgrammingSimilarity(self.__s, self.__t)
 
     def run(self):
         similarity = self.__sim.sim()
