@@ -11,5 +11,8 @@ class Similarity:
     def sim(self):
         raise NotImplementedError('A similarity algorithm must be implemented.')
 
+    def align(self):
+        raise NotImplemented('You have to find a way to get the alignment.')
+
     def __str__(self):
         return 'Algorithm Type: %r' % self.algorithm

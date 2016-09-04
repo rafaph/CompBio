@@ -16,6 +16,7 @@ class MainGlobalAlignment:
         print('S:', self.__s)
         print('T:', self.__t)
         print('Similarity: ', similarity)
+        print('Alignment:\nS: %r\nT: %r' % self.__sim.align())
         print(self.__sim)
 
     @staticmethod
